@@ -1,6 +1,7 @@
 (require 'dbus)
 
-(setq session-manager-client-id nil)
+(defvar session-manager-client-id nil
+  "Session Manager Client Id")
 
 (defun session-manager-call (method &rest args)
   (apply 'dbus-call-method
