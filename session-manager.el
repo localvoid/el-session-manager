@@ -65,7 +65,7 @@
    (list
     (read-string "Name: ")))
   (setq session-manager-client-id
-        (session-manager-register-client "com.localvoid.EmacsManager"
+        (session-manager-register-client "emacs"
                                          (concat "emacs-manager-" name)))
   (session-manager-client-private-register-signal
    session-manager-client-id "QueryEndSession"
