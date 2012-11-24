@@ -1,3 +1,18 @@
+;;; session-manager.el --- Support for the Gnome Session Manager
+
+;; Copyright (C) 2012 Boris Kaul
+
+;; Author: Boris Kaul <localvoid@gmail.com>
+;; Maintainer: Someone Else <localvoid@gmail.com>
+;; Created: 28 Jul 2012
+;; Version: 0.5
+;; Keywords: gnome, session
+
+;; This file is not part of GNU Emacs.
+
+;; This file is free software...
+
+;; along with this file.  If not, see <http://www.gnu.org/licenses/>.
 (require 'dbus)
 
 (defvar session-manager-client-id nil
@@ -80,3 +95,4 @@
      (kill-emacs))))
 
 (provide 'session-manager)
+;;; session-manager.el ends here
