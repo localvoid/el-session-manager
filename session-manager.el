@@ -66,7 +66,7 @@
     (read-string "Name: ")))
   (setq session-manager-client-id
         (session-manager-register-client "emacs"
-                                         (concat "emacs-manager-" name)))
+                                         (concat "emacs-" name)))
   (session-manager-client-private-register-signal
    session-manager-client-id "QueryEndSession"
    (lambda (flags)
