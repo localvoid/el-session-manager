@@ -3,7 +3,7 @@
 ;; Copyright (C) 2012 Boris Kaul
 
 ;; Author: Boris Kaul <localvoid@gmail.com>
-;; Maintainer: Someone Else <localvoid@gmail.com>
+;; Maintainer: Boris Kaul <localvoid@gmail.com>
 ;; Created: 28 Jul 2012
 ;; Version: 0.5
 ;; Keywords: gnome, session
