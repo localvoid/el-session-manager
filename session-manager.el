@@ -70,13 +70,13 @@
   (session-manager-client-private-register-signal
    session-manager-client-id "QueryEndSession"
    (lambda (flags)
-     (message "QueryEndSession: %i" flags)
+     (message "SessionManager: QueryEndSession: %i" flags)
      (run-hooks 'session-manager-query-end-session-hook)
      (session-manager-end-session-response t "")))
   (session-manager-client-private-register-signal
    session-manager-client-id "EndSession"
    (lambda (flags)
-     (message "EndSession: %i" flags)
+     (message "SessionManager: EndSession: %i" flags)
      (run-hooks 'session-manager-end-session-hook)
      (run-hooks 'kill-emacs-hook)
      (session-manager-end-session-response t "")
@@ -85,12 +85,12 @@
   (session-manager-client-private-register-signal
    session-manager-client-id "CancelEndSession"
    (lambda ()
-     (message "CancelEndSession")
+     (message "SessionManager: CancelEndSession")
      (run-hooks 'session-manager-cancel-end-session-hook)))
   (session-manager-client-private-register-signal
    session-manager-client-id "Stop"
    (lambda ()
-     (message "Stop")
+     (message "SessionManager: Stop")
      (run-hooks 'session-manager-stop-hook)
      (kill-emacs))))
 
